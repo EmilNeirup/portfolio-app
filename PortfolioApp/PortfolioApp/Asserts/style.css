@@ -1,0 +1,160 @@
+﻿.container {
+    background-color: #464F51;
+}
+
+.heading {
+    color: white;
+    padding: 30,50,30,20;
+    font-size: 30;
+    text-align: center;
+}
+
+.mainView {
+    background-color: white;
+}
+
+.tile-view {
+    margin-top: 10;
+}
+
+.tile {
+    text-align: center;
+    margin-left: 20;
+}
+
+.tile1 {
+    margin-top: 60;
+}
+
+.tile1-text {
+    color: #464F51;
+    font-size: medium;
+}
+
+.tile2 {
+    margin-top: 60;
+}
+
+.tile3 {
+    margin-top: 20;
+    margin-bottom: 130;
+}
+
+.tile4 {
+    margin-top: 20;
+    margin-bottom: 130;
+}
+
+.footer {
+    background-color: #CBF5E3;
+    margin: -20,0,-20,0;
+}
+
+.footer-view {
+    margin-left: 20;
+}
+
+.footer-icon-view {
+    margin-left: 50;
+    margin-top: 82;
+}
+
+.footer-textContainer {
+    margin-top: 50;
+    margin-left: 10;
+}
+
+.footer-text {
+    color: #464F51;
+    font-size: small;
+    margin-bottom: 5;
+}
+
+.footer-text-name {
+    margin-left: -30;
+}
+
+.footer-imgContainer {
+    margin-top: 40;
+}
+
+.footer-cases-view {
+    margin: 30,45,0,0;
+}
+
+.footer-imgCases-container {
+    margin: -10,5,0,0;
+}
+
+.footer-cases1, .footer-cases2 {
+    margin: 0,10,0,0;
+}
+
+.footer-dots1, .footer-dots2 {
+    margin: 0,13,0,0;
+}
+
+.footer-cases3, .footer-cases4 {
+    margin: 0,-22,0,0;
+}
+
+.footer-dots3, .footer-dots4 {
+    margin: 0,-17,0,0;
+}
+
+.footer-button-cases {
+    margin-top: -45;
+}
+
+.footer-text-cases {
+    font-size: medium;
+}
+
+.img-view {
+    margin: 20,0,30,0;
+}
+
+.image-img {
+    margin: 20,20,20,20;
+}
+
+.name-view {
+    margin: 20,0,0,0;
+    padding-top: 40;
+}
+
+.name-view-text {
+    font-size: large;
+}
+
+.links-view {
+    margin: 30,0,0,10;
+}
+
+.link-text {
+    font-size: small;
+    color: #464F51;
+}
+
+.logo-view {
+    margin-top: 20;
+    padding-bottom: 50;
+}
+
+.text-view1 {
+    margin-left: 10;
+}
+
+.text-view2 {
+    margin-left: 20;
+    margin-right: -20;
+}
+
+.text-view-case {
+    margin-top: 20;
+}
+
+.main-text {
+    font-size: small;
+    color: #464F51;
+}

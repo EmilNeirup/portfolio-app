@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PortfolioApp.MainPage"
+             Title="Cases">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Asserts/style.css" />
+    </ContentPage.Resources>
+
+    <StackLayout class="container">
+        <StackLayout Padding="10" />
+       <Frame class="view" CornerRadius="50">
+           <StackLayout class="viewStack">
+               <StackLayout class="tileView">
+                   <Grid>
+
+                       <Grid.RowDefinitions>
+                           <RowDefinition Height="230" />
+                           <RowDefinition Height="330" />
+                       </Grid.RowDefinitions>
+
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="180" />
+                           <ColumnDefinition Width="180" />
+                       </Grid.ColumnDefinitions>
+
+                       <Frame class="tile, tile1" Grid.Row="0" Grid.Column="0" CornerRadius="30">
+                           <StackLayout x:Name="CMS_Tile" class="tile1-stack">
+                               <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OpenCase"/>
+                                </StackLayout.GestureRecognizers>
+                               <Label class="tile1-text" Text="CMS"/>
+                               <Image Source="cms.png" />
+                           </StackLayout>
+                       </Frame>
+
+                       <Frame x:Name="PWA_Tile" class="tile, tile2" Grid.Row="0" Grid.Column="1" CornerRadius="30">
+                           <StackLayout class="tile2-stack">
+                               <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OpenCase"/>
+                                </StackLayout.GestureRecognizers>
+                               <Label class="tile1-text" Text="PWA"/>
+                               <Image Source="pwa.png" />
+                           </StackLayout>
+                       </Frame>
+
+                       <Frame x:Name="Cypress_Tile" class="tile, tile3" Grid.Row="1" Grid.Column="0" CornerRadius="30">
+                           <StackLayout class="tile1-stack">
+                               <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OpenCase"/>
+                                </StackLayout.GestureRecognizers>
+                               <Label class="tile1-text" Text="Cypress"/>
+                               <Image Source="cypress.png" />
+                           </StackLayout>
+                       </Frame>
+
+                       <Frame x:Name="Native_Tile" class="tile, tile4" Grid.Row="1" Grid.Column="1" CornerRadius="30">
+                           <StackLayout class="tile1-stack">
+                               <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OpenCase"/>
+                                </StackLayout.GestureRecognizers>
+                               <Label class="tile1-text" Text="Native Apps"/>
+                               <Image Source="nativeApps.png" />
+                           </StackLayout>
+                       </Frame>
+
+                   </Grid>
+               </StackLayout>
+
+               <Frame class="footer" CornerRadius="50">
+
+                   <StackLayout class="footer-view">
+                       <Grid>
+
+                       <Grid.RowDefinitions>
+                           <RowDefinition Height="225" />
+                       </Grid.RowDefinitions>
+
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="100" />
+                           <ColumnDefinition Width="65" />
+                           <ColumnDefinition Width="170" />
+                       </Grid.ColumnDefinitions>
+
+                       <StackLayout class="footer-imgContainer" Grid.Column="0">
+                           <Image Grid.Column="0" Source="emil.png" />
+                       </StackLayout>
+
+                       <StackLayout class="footer-icon-view" Grid.Column="1">
+                           <Image Margin="0,0,0,8" Source="phone.png" />
+                           <Image Source="mail.png" />
+                       </StackLayout>
+
+                       <StackLayout class="footer-textContainer" Grid.Column="2">
+                           <Label class="footer-text, footer-text-name" Text="Emil Neirup Jensen" Font="Bold"/>
+                           <Label class="footer-text" Text="+45 61 31 92 66" />
+                           <Label class="footer-text" Text="emilnjensen@gmail.com" />
+                           <Button class="footer-button" Clicked="ToMyPage" TextColor="#464F51" Font="Bold" Text="Go to CV" />
+                       </StackLayout>
+
+                   </Grid>
+                   </StackLayout>
+                  
+               </Frame>
+
+           </StackLayout>
+       </Frame>
+    </StackLayout>
+</ContentPage>

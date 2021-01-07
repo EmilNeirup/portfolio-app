@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PortfolioApp.MyPage"
+             Title="CV">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Asserts/style.css" />
+    </ContentPage.Resources>
+
+    <StackLayout class="container">
+       <StackLayout Padding="10" />
+       <Frame class="view" CornerRadius="50">
+           <StackLayout class="viewStack">
+               <StackLayout class="tileView">
+                   <Grid>
+
+                       <Grid.RowDefinitions>
+                           <RowDefinition Height="150" />
+                           <RowDefinition Height="330" />
+                           <RowDefinition Height="70" />
+                       </Grid.RowDefinitions>
+
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="180" />
+                           <ColumnDefinition Width="180" />
+                       </Grid.ColumnDefinitions>
+
+                       <StackLayout class="img-view" Grid.Row="0" Grid.Column="0">
+                           <Image Source="emil.png" />
+                       </StackLayout>
+
+                       <StackLayout class="name-view" Grid.Row="0" Grid.Column="1">
+                           <Label class="name-view-text" Text="Emil Neirup Jensen" />
+                       </StackLayout>
+
+                       <StackLayout class="text-view1" Grid.Row="1" Grid.Column="0">
+                           <Label class="main-text" Text="Mit arbejde i Addition bestod bl.a. i udvikling af CMS løsninger i Umbraco, både frontend og backend. Derudover arbejdede jeg med SPA udvikling i bl.a. React. Som en del af softwareudvikling varetog jeg en centralrolle QA og test af løsninger i udviklingsfasen. Heriblandt teststrategier og automatiserede test i Selenium og Cypress.Udover udvikling administrere jeg også redaktør opgaver i Sitecore og EPiServer," />
+                       </StackLayout>
+
+                       <StackLayout class="text-view2" Grid.Row="1" Grid.Column="1">
+                           <Label class="main-text" Text="intern IT administration, hardware og Active Diretory håndtering. Som et led i min uddannelses begyndende fase var jeg 14 dage i virksomhedsforlagt undervisning hos WorkBook Software. Her arbejdede jeg med komplekse SQL strukturere og håndtering af disse data." />
+                       </StackLayout>
+
+                       <StackLayout class="links-view" Grid.Row="2" Grid.Column="0">
+                           <Grid>
+
+                               <Grid.RowDefinitions>
+                                   <RowDefinition Height="20" />
+                                   <RowDefinition Height="20" />
+                               </Grid.RowDefinitions>
+
+                               <Grid.ColumnDefinitions>
+                                   <ColumnDefinition Width="15" />
+                                   <ColumnDefinition Width="190" />
+                               </Grid.ColumnDefinitions>
+
+                               <Image Grid.Row="0" Grid.Column="0" Source="phone.png" />
+                               <Label Grid.Row="0" Grid.Column="1" class="link-text, link-text1" Text="+45 61 31 92 66" />
+                               <Image Grid.Row="1" Grid.Column="0" Source="mail.png" />
+                               <Label Grid.Row="1" Grid.Column="1" class="link-text, link-text2" Text="emilnjensen@gmail.com" />
+
+                           </Grid>
+                       </StackLayout>
+
+                       <StackLayout class="links-view" Grid.Row="2" Grid.Column="1">
+                           <Grid>
+
+                               <Grid.RowDefinitions>
+                                   <RowDefinition Height="20" />
+                                   <RowDefinition Height="20" />
+                               </Grid.RowDefinitions>
+
+                               <Grid.ColumnDefinitions>
+                                   <ColumnDefinition Width="15" />
+                                   <ColumnDefinition Width="190" />
+                               </Grid.ColumnDefinitions>
+
+                               <Image Grid.Row="0" Grid.Column="0" Source="linkedin.png" />
+                               <Label Grid.Row="0" Grid.Column="1" class="link-text, link-text1" Text="@Emil Neirup" />
+                               <Image Grid.Row="1" Grid.Column="0" Source="github.png" />
+                               <Label Grid.Row="1" Grid.Column="1" class="link-text, link-text2" Text="@Emil Neirup" />
+
+                           </Grid>
+                       </StackLayout>
+                   </Grid>
+               </StackLayout>
+
+               <Frame class="footer" CornerRadius="50">
+                   <StackLayout class="footer-view">
+                       <Grid>
+
+                           <Grid.RowDefinitions>
+                               <RowDefinition Height="225" />
+                           </Grid.RowDefinitions>
+
+                           <Grid.ColumnDefinitions>
+                               <ColumnDefinition Width="150" />
+                               <ColumnDefinition Width="200" />
+                           </Grid.ColumnDefinitions>
+
+                           <StackLayout class="footer-imgCases-container" Grid.Column="0">
+                               <Image Grid.Column="0" Source="cases.png" />
+                           </StackLayout>
+
+                           <StackLayout class="footer-cases-view" Grid.Column="1">
+
+                               <Label class="footer-text, footer-text-cases" Text="Cases" Font="Bold"/>
+
+                               <Grid>
+                                   <Grid.RowDefinitions>
+                                       <RowDefinition Height="50" />
+                                       <RowDefinition Height="50" />
+                                   </Grid.RowDefinitions>
+
+                                   <Grid.ColumnDefinitions>
+                                       <ColumnDefinition Width="8" />
+                                       <ColumnDefinition Width="50" />
+                                       <ColumnDefinition Width="8" />
+                                       <ColumnDefinition Width="100" />
+                                   </Grid.ColumnDefinitions>
+
+                                   <StackLayout class="footer-dots1" Grid.Row="0" Grid.Column="0">
+                                       <Image Source="dot.png" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-cases1" Grid.Row="0" Grid.Column="1">
+                                       <Label class="footer-text" Text="CMS" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-dots2" Grid.Row="0" Grid.Column="2">
+                                       <Image Source="dot.png" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-cases1" Grid.Row="0" Grid.Column="3">
+                                       <Label class="footer-text" Text="Cypress" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-dots3" Grid.Row="1" Grid.Column="0">
+                                       <Image Source="dot.png" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-cases3" Grid.Row="1" Grid.Column="1">
+                                       <Label class="footer-text" Text="PWA" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-dots4" Grid.Row="1" Grid.Column="2">
+                                       <Image Source="dot.png" />
+                                   </StackLayout>
+
+                                   <StackLayout class="footer-cases4" Grid.Row="1" Grid.Column="3">
+                                       <Label class="footer-text" Text="Native Apps" />
+                                   </StackLayout>
+                               </Grid>
+
+                               <Button class="footer-button, footer-button-cases" Clicked="ToMyPage" TextColor="#464F51" Font="Bold" Text="Go to Cases" />
+
+                           </StackLayout>
+
+                        </Grid>
+                   </StackLayout>
+               </Frame>
+
+           </StackLayout>
+       </Frame>
+    </StackLayout>
+</ContentPage>
