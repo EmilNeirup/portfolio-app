@@ -78,7 +78,7 @@ namespace PortfolioApp
             PWA_Tile.BindingContext = Case3Details;
             Native_Tile.BindingContext = Case4Details;
 
-    }
+        }
 
         async void ToMyPage(object sender, EventArgs e)
         {
